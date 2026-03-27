@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    <title>Privacy Policy - Smart Tasbeeh Counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Poppins', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #e5925b 0%, #c97b45 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(229, 146, 91, 0.2);
+        }
+
+        .logo svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #e5925b 0%, #c97b45 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(229, 146, 91, 0.1);
+            border-radius: 50px;
+            font-weight: 500;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(229, 146, 91, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(229, 146, 91, 0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #e5925b;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: linear-gradient(135deg, #e5925b 0%, #c97b45 100%);
+            border-radius: 4px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 20px 0 12px 0;
+            color: #c97b45;
+            font-weight: 600;
+        }
+
+        p {
+            color: #4a5568;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #e5925b 0%, #c97b45 100%);
+            color: white;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        ul, .data-list {
+            margin: 16px 0 16px 24px;
+            color: #4a5568;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .data-list li {
+            list-style: none;
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .data-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #e5925b;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, rgba(229, 146, 91, 0.1) 0%, rgba(201, 123, 69, 0.1) 100%);
+            padding: 20px;
+            border-radius: 16px;
+            margin: 20px 0;
+            border-left: 3px solid #e5925b;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #e5925b 0%, #c97b45 100%);
+            color: white;
+            padding: 24px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 20px;
+            border-top: 1px solid rgba(229, 146, 91, 0.2);
+            color: #95a5a6;
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: #e5925b;
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15 8H9L12 2Z" fill="white"/>
+                    <path d="M12 22L9 16H15L12 22Z" fill="white"/>
+                    <rect x="4" y="8" width="16" height="8" rx="2" fill="white"/>
+                    <circle cx="12" cy="12" r="2" fill="#e5925b"/>
+                </svg>
+            </div>
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">📅 Last updated: March 27, 2026</div>
+        </div>
+
+        <!-- Introduction Card -->
+        <div class="card">
+            <p style="font-size: 1.1rem;">At <strong>Smart Tasbeeh Counter</strong>, we believe in complete privacy and transparency. This privacy policy explains how we handle your data when you use our digital tasbeeh app.</p>
+            <div class="highlight">
+                <strong>✨ Key Point:</strong> We do NOT collect, store, or share any personal information. All your data stays on your device.
+            </div>
+        </div>
+
+        <!-- Data Collection Card -->
+        <div class="card">
+            <h2>📊 Information We Collect</h2>
+            <p><span class="badge">ZERO DATA</span> <strong>We collect absolutely NO personal information.</strong></p>
+            <p>Smart Tasbeeh Counter does not require you to create an account, provide an email, or share any personal details. The app works completely offline.</p>
+            
+            <h3>What we DON'T collect:</h3>
+            <ul class="data-list">
+                <li>❌ No email addresses or phone numbers</li>
+                <li>❌ No location data or GPS tracking</li>
+                <li>❌ No device identifiers or advertising IDs</li>
+                <li>❌ No usage analytics or crash reports</li>
+                <li>❌ No contacts, photos, or files</li>
+            </ul>
+        </div>
+
+        <!-- Data Storage Card -->
+        <div class="card">
+            <h2>💾 Data Storage</h2>
+            <p>All your tasbeeh sessions, counter history, and app settings are stored <strong>exclusively on your device</strong> using a local database (Hive).</p>
+            <ul class="data-list">
+                <li>✅ Data never leaves your device</li>
+                <li>✅ No cloud sync or backup to external servers</li>
+                <li>✅ You have full control to delete your data anytime</li>
+                <li>✅ Uninstalling the app removes all stored data</li>
+            </ul>
+            <div class="highlight">
+                <strong>🔒 Your data, your control:</strong> You can clear all sessions from the Settings screen at any time.
+            </div>
+        </div>
+
+        <!-- Permissions Card -->
+        <div class="card">
+            <h2>🔐 Permissions</h2>
+            <p>Smart Tasbeeh Counter requests minimal permissions for a better user experience:</p>
+            
+            <h3>📳 Vibration Permission</h3>
+            <p><strong>Purpose:</strong> Provides haptic feedback when you tap the counter button.</p>
+            <p><strong>Optional:</strong> You can disable this feature anytime in Settings → Enable Vibration.</p>
+            <p><strong>Data Access:</strong> No data is collected or shared through this permission.</p>
+        </div>
+
+        <!-- Third-Party Services Card -->
+        <div class="card">
+            <h2>🌐 Third-Party Services</h2>
+            <p><strong>We use NO third-party services, analytics, or advertising networks.</strong></p>
+            <ul class="data-list">
+                <li>✅ No Google Analytics or Firebase Analytics</li>
+                <li>✅ No Facebook SDK or other trackers</li>
+                <li>✅ No ad networks or remarketing services</li>
+                <li>✅ No crash reporting tools</li>
+            </ul>
+            <p>The app is 100% independent and runs offline without connecting to any external servers.</p>
+        </div>
+
+        <!-- Children's Privacy Card -->
+        <div class="card">
+            <h2>👶 Children's Privacy</h2>
+            <p>Smart Tasbeeh Counter is suitable for users of all ages. Since we collect no personal information, there is no risk to children's privacy.</p>
+            <ul class="data-list">
+                <li>✅ No age restrictions or verification required</li>
+                <li>✅ No targeted content or advertisements</li>
+                <li>✅ No personal data collection from anyone, including children under 13</li>
+            </ul>
+            <p>Parents can rest assured that the app is safe for children to use independently.</p>
+        </div>
+
+        <!-- Data Security Card -->
+        <div class="card">
+            <h2>🛡️ Data Security</h2>
+            <p>While we don't collect any data from you, we still take security seriously:</p>
+            <ul class="data-list">
+                <li>✅ All local data is stored in secure device storage</li>
+                <li>✅ No internet connection required, eliminating online risks</li>
+                <li>✅ App follows Android and iOS security best practices</li>
+                <li>✅ Regular updates to ensure compatibility and security</li>
+            </ul>
+        </div>
+
+        <!-- Your Rights Card -->
+        <div class="card">
+            <h2>📋 Your Rights</h2>
+            <p>Since we don't collect any personal data, many standard privacy rights are inherently satisfied:</p>
+            <ul class="data-list">
+                <li>✅ <strong>Right to Delete:</strong> Clear all sessions from Settings screen</li>
+                <li>✅ <strong>Right to Control:</strong> Manage vibration, reset confirmation, and default zikr in Settings</li>
+                <li>✅ <strong>Right to Uninstall:</strong> Removing the app deletes all local data</li>
+                <li>✅ <strong>Right to Transparency:</strong> This policy clearly explains our practices</li>
+            </ul>
+        </div>
+
+        <!-- Policy Updates Card -->
+        <div class="card">
+            <h2>🔄 Changes to This Policy</h2>
+            <p>We may update this privacy policy occasionally to reflect improvements or clarify our practices. Any changes will be posted here with an updated "Last updated" date.</p>
+            <p>We encourage you to review this page periodically. Since we don't collect your email, we cannot notify you individually, but all updates will be clearly shown here.</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Smart Tasbeeh Counter - Your Digital Tasbeeh Companion</p>
+            <p>Made with ❤️ for spiritual mindfulness</p>
+            <p><a href="#">Back to Top</a></p>
+        </div>
+    </div>
+</body>
+</html>
